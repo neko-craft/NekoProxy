@@ -38,7 +38,7 @@ public final class Main extends JavaPlugin {
         if (proxy.isEmpty()) return;
         try {
             setProxy(new URI(proxy));
-            System.out.println("Set proxy to: " + proxy);
+            getLogger().info("Set proxy to: " + proxy);
         } catch (URISyntaxException e) {
             e.printStackTrace();
         } catch (Throwable e) {
